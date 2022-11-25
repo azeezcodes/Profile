@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
+.allcon {
+   background-color: rgb(35, 21, 60);
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   color: white;
+}
+
+.jj {
+   font-weight: 900;
+   font-size: 2.3rem;
+   margin-left: 4px;
+   background: #a7cfdf;
+   background: linear-gradient(to right, #a7cfdf 0%, #23538a 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-family: "Fredoka One", cursive;
+}
+
+.ss {
+   font-family: "Pangolin", cursive;
+}
+.ddd {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   gap: 3rem 5rem;
+}
+
+.navbar {
+   height: 5rem;
+   background-color: "#685155";
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+   padding-left: 4rem;
+   padding-right: 4rem;
+}
+.icon {
+   font-family: "Rubik Puddles", cursive;
+   font-weight: bolder;
+   font-size: 2.1rem;
+   color: #ccd6f6;
+}
+.side {
+   display: flex;
+   width: 350px;
+   justify-content: space-between;
+}
+.side p {
+   font-family: "Leckerli One", cursive;
+   font-size: 1.6rem;
+}
+
+.describe {
+   height: 300px;
+   font-weight: lighter !important;
+   width: 700px;
+   margin: 280px auto 30px;
+}
+
+.describe p {
+   width: 100%;
+   text-align: center;
+   transform: scale(0.94);
+   animation: scale 13s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+   100% {
+      transform: scale(1);
+   }
+}
+
+span {
+   display: inline-block;
+   opacity: 0;
+   filter: blur(4px);
+   margin-right: 0.6rem;
+}
+
+span:nth-child(1) {
+   animation: fade-in 0.98s 0.9s forwards cubic-bezier(0.9, 0, 0.9, 0);
+}
+
+span:nth-child(2) {
+   animation: fade-in 0.98s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+   animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+   100% {
+      opacity: 1;
+      filter: blur(0);
+   }
+}
+.aa {
+   text-align: center;
+   margin-top: 10rem;
+   color: #ccd6f6;
+   font-family: "Fredoka One", cursive;
+   font-size: 3rem;
+   font-weight: 900px;
+}
+.logo {
+   display: flex;
+
+   align-items: center;
+   border: 1px solid;
+   padding: 10px 6rem;
+   border-image-slice: 1;
+   border-width: 1px;
+   border-radius: 5px;
+   border-image-source: linear-gradient(#743ad5, #d53a9d);
+   font-family: "Fredoka One", cursive;
+}
+.logo:hover {
+   background-color: #8ca4f3;
+   color: black;
+   font-size: 1.2rem;
+   text-shadow: black 1px 0 24px;
+}
+
+.logo p {
+   margin-left: 15px;
+}
+
+.resume {
+   display: grid;
+   place-content: center;
+}
+
+/* CSS */
+.button-92 {
+   --c: #fff;
+   /* text color */
+   background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+         var(--_p, 100%) / 300% no-repeat,
+      #23538a;
+   /* background color */
+   color: #0000;
+   border: none;
+   border-radius: 5px;
+   transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+   text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+      calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+   outline-offset: 0.1em;
+   transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+   --_p: 0%;
+   --_i: 1;
+}
+
+.button-92:active {
+   text-shadow: none;
+   color: var(--c);
+   box-shadow: inset 0 0 9e9Q #0005;
+   transition: 0s;
+}
+
+.button-92 {
+   font-weight: bold;
+   font-size: 1.2rem;
+   margin: 0;
+   cursor: pointer;
+   padding: 0.5em 1.3em;
+}
+
+.onepg {
+   border-radius: 10px;
+   border: 1px solid white;
+   width: max-content;
+   height: max-content;
+   font-family: "Fredoka One", cursive;
+   background-color: rgb(24, 25, 36);
+}
+
+.onepg img {
+   height: 500px;
+   width: 500px;
+   object-fit: contain;
+   border-radius: 10px;
+}
+.fl {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-size: 1.4rem;
+}
+.projects {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 3rem 0rem;
+}
+.footer {
+   margin-top: 5rem;
+   margin-bottom: 3rem !important;
+   text-align: center;
+   font-family: "Covered By Your Grace", cursive;
+   font-size: 1.5rem;
+   position: relative;
+   bottom: 0;
+}
+.footer p:hover {
+   color: rgb(84, 186, 124);
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 2rem;
+    position: fixed;
+    bottom: 10px;
+    right: auto;
+    left: 20px;
+    color: #a8b2d1;
+}
+
+
+
+
+
+
+
+/* /////////media query */
+
+@media (max-width: 768px) {
+   .icon {
+      font-size: 1.2rem;
+   }
+   .navbar {
+      margin-left: 5px;
+   }
+   .describe {
+      text-align: center;
+      width: fit-content;
+   }
+   .projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .onepg {
+      width: 280px;
+   }
+   .onepg img {
+      object-fit: contain;
+      width: 280px;
+   }
+
+   .footer {
+      margin-bottom: 2rem;
+   }
+
+   .contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  gap: 2rem;
+    position: fixed;
+    bottom: 0px;
+    right: auto;
+    left: 10px;
+    color: #a8b2d1;
+}
+
+}
