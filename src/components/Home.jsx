@@ -222,19 +222,37 @@ const Home = () => {
          </div>
 
          <div className="contact">
-            <a href="https://github.com/azeezcodes">
+            <a
+               href="https://github.com/azeezcodes"
+               target="_blank"
+               rel="noreferrer"
+            >
                {" "}
                <FiGithub />
             </a>
-            <a href="https://www.linkedin.com/in/abdulazeez-onadipe/">
+            <a
+               href="https://www.linkedin.com/in/abdulazeez-onadipe/"
+               target="_blank"
+               rel="noreferrer"
+            >
                {" "}
                <FaLinkedinIn />
             </a>
-            <a href="https://twitter.com/az_omoade">
+            <a
+               href="https://twitter.com/az_omoade"
+               target="_blank"
+               rel="noreferrer"
+            >
                <FiTwitter />
             </a>
-
-            <HiOutlineMail />
+            <a
+               href="onadipeabdulazeez@gmail.com"
+               target="_blank"
+               rel="noreferrer"
+            >
+               {" "}
+               <HiOutlineMail />
+            </a>
          </div>
       </div>
    );
