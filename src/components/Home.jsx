@@ -56,7 +56,13 @@ const Home = () => {
          <div className="resume">
             {/* ........ */}
 
-            <button className="button-92">Resume</button>
+            <a
+               href="https://drive.google.com/file/d/1YcTBhRHOGiK286iBd-bgir-OL2TaYgeq/view?usp=share_link"
+               target="_blank"
+               rel="noreferrer"
+            >
+               <button className="button-92">Resume</button>
+            </a>
 
             {/* ........ */}
          </div>
@@ -146,7 +152,9 @@ const Home = () => {
                   <div className="fl">
                      <p>BestCombo Food App</p>
                      <div>
-                        <AiFillGithub />
+                        <a href="https://github.com/azeezcodes/Tailwind_React_Responsive">
+                           <AiFillGithub />
+                        </a>
                      </div>
                   </div>
                   <div>
@@ -162,7 +170,9 @@ const Home = () => {
                   <div className="fl">
                      <p>Fintech Dashboard</p>
                      <div>
-                        <AiFillGithub />
+                        <a href="https://github.com/azeezcodes/Fintech_dashborad">
+                           <AiFillGithub />
+                        </a>
                      </div>
                   </div>
                   <div>
@@ -180,7 +190,9 @@ const Home = () => {
                   <div className="fl">
                      <p>Analyst Chart</p>
                      <div>
-                        <AiFillGithub />
+                        <a href="https://github.com/azeezcodes/Drill_dashboard">
+                           <AiFillGithub />
+                        </a>
                      </div>
                   </div>
                   <div>
@@ -199,7 +211,7 @@ const Home = () => {
                      </div>
                   </div>
                   <div>
-                     <p style={{ marginLeft: "1rem" }}>Nextjs, Sass,</p>
+                     <p style={{ marginLeft: "1rem" }}>Reactjs, CSS,</p>
                   </div>
                </div>
             </div>
@@ -210,11 +222,19 @@ const Home = () => {
          </div>
 
          <div className="contact">
-            <FiGithub />
-            <FaLinkedinIn />
-            <FiTwitter />
+            <a href="https://github.com/azeezcodes">
+               {" "}
+               <FiGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/abdulazeez-onadipe/">
+               {" "}
+               <FaLinkedinIn />
+            </a>
+            <a href="https://twitter.com/az_omoade">
+               <FiTwitter />
+            </a>
+
             <HiOutlineMail />
-           
          </div>
       </div>
    );

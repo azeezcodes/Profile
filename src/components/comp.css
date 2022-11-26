@@ -230,9 +230,14 @@ span:nth-child(3) {
     bottom: 10px;
     right: auto;
     left: 20px;
-    color: #a8b2d1;
+    color: #a8b2d1 !important;
+    text-decoration: none;
 }
-
+ a{
+  color: #a8b2d1 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
