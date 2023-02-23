@@ -57,7 +57,7 @@ const Home = () => {
             {/* ........ */}
 
             <a
-               href="https://drive.google.com/file/d/1YcTBhRHOGiK286iBd-bgir-OL2TaYgeq/view?usp=share_link"
+               href="https://drive.google.com/file/d/1UCdEdF_DnmuChbFIOo3_lU3VdBfVGWL8/view"
                target="_blank"
                rel="noreferrer"
             >
