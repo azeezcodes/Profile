@@ -122,6 +122,15 @@ const Home = () => {
                />
                <p>Redux</p>
             </div>
+             <div className="logo">
+               <img
+                  style={{ width: "50px", height: "50px" }}
+                  src="/assets/images/angular-logo.png"
+                  alt=""
+               />
+               <p>Angular</p>
+            </div>
+
             <div className="logo">
                <img
                   style={{ width: "50px", height: "50px" }}
