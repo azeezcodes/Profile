@@ -1,39 +1,17 @@
 import React from "react";
 import "./comp.css";
-import AnimatedCursor from "react-animated-cursor";
-import { useEffect, useRef, useState } from "react";
-import NET from "vanta/dist/vanta.net.min";
-import * as THREE from "three";
 import { AiFillGithub } from "react-icons/ai";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Home = () => {
-   const [vantaEffect, setVantaEffect] = useState(0);
-   const vantaRef = useRef(null);
-   useEffect(() => {
-      if (!vantaEffect) {
-         setVantaEffect(
-            NET({
-               el: vantaRef.current,
-               THREE,
-               color: 0x14b679,
-               backgroundColor: 0x15173c,
-               maxDistance: 3.0,
-            })
-         );
-      }
-      return () => {
-         if (vantaEffect) vantaEffect.destory();
-      };
-   }, [vantaEffect]);
+  
 
    return (
-      <div className="allcon" ref={vantaRef}>
-         <AnimatedCursor />
+      <div className="allcon">
          <div className="navbar">
-            <p className="icon">azeezcodes</p>
+            <p className="icon text-sm">azeezcodes</p>
             {/* <div className="side">
                <p>Skills</p>
                <p>Projects</p>
@@ -42,15 +20,29 @@ const Home = () => {
          </div>
 
          <div className="describe">
-            <p>
-               <span style={{ fontWeight: "900" }} className="ss">
-                  Hi, my name is <span className="jj">Abdulazeez Onadipe.</span>
-               </span>
-               <span className="ss" style={{ fontSize: "19px" }}>
-                  I am a software engineer from Lagos Nigeria, with solid years
-                  of experience in building exceptional digital experience
-               </span>
-            </p>
+            <div>
+               <p>
+                  <span style={{ fontWeight: "900" }} className="ss">
+                     Hi, my name is{" "}
+                     <span className="jj">Abdulazeez Onadipe.</span>
+                  </span>
+                  <span className="ss" style={{ fontSize: "19px" }}>
+                     Experienced Frontend Developer with a dynamic 3-year track
+                     record, showcasing impactful leadership and substantial
+                     contributions across diverse projects. Proficient in
+                     cutting-edge technologies—Javascript, TypeScript, React,
+                     Next.js, and CSS frameworks. My results-driven approach
+                     ensures meeting aggressive deadlines seamlessly. Committed
+                     to client satisfaction, I go the extra mile. Specializing
+                     in clean, scalable, and well-documented code, I eagerly
+                     anticipate collaborating on innovative projects, fostering
+                     teamwork, and leading independent initiatives within a
+                     dynamic organization. Let's build exceptional solutions
+                     together!
+                  </span>
+               </p>
+            </div>
+            <div></div>
          </div>
 
          <div className="resume">
@@ -68,7 +60,7 @@ const Home = () => {
          </div>
 
          <div>
-            <p className="aa">Super-Skills</p>
+            <p className="aa">Skills</p>
          </div>
 
          <div className="ddd">
@@ -112,7 +104,23 @@ const Home = () => {
                   src="/assets/images/react.png"
                   alt=""
                />
-               <p>ReactJs/NextJs</p>
+               <p>ReactJs</p>
+            </div>
+            <div className="logo">
+               <img
+                  style={{ width: "50px", height: "50px" }}
+                  src="/assets/images/react.png"
+                  alt=""
+               />
+               <p>NextJs</p>
+            </div>
+            <div className="logo">
+               <img
+                  style={{ width: "50px", height: "50px" }}
+                  src="/assets/images/react.png"
+                  alt=""
+               />
+               <p>React-Native</p>
             </div>
             <div className="logo">
                <img
@@ -122,7 +130,7 @@ const Home = () => {
                />
                <p>Redux</p>
             </div>
-             <div className="logo">
+            <div className="logo">
                <img
                   style={{ width: "50px", height: "50px" }}
                   src="/assets/images/angular-logo.png"
@@ -145,7 +153,7 @@ const Home = () => {
                   src="/assets/images/java-script.png"
                   alt=""
                />
-               <p>NodeJs/ExpressJs</p>
+               <p>NodeJs</p>
             </div>
          </div>
          {/* ........... */}
@@ -177,7 +185,7 @@ const Home = () => {
                <img src="/assets/images/twop.jpeg" alt="" className="im" />
                <div>
                   <div className="fl">
-                     <p>Fintech Dashboard</p>
+                     <p>Fintech App</p>
                      <div>
                         <a href="https://github.com/azeezcodes/Fintech_dashborad">
                            <AiFillGithub />
@@ -186,7 +194,7 @@ const Home = () => {
                   </div>
                   <div>
                      <p style={{ marginLeft: "1rem" }}>
-                        Reactjs, Typescript, Sass, Redux
+                        Nextjs, Typescript, Sass, Redux
                      </p>
                   </div>
                </div>
@@ -205,7 +213,7 @@ const Home = () => {
                      </div>
                   </div>
                   <div>
-                     <p style={{ marginLeft: "1rem" }}>Reactjs, CSS3, Redux</p>
+                     <p style={{ marginLeft: "1rem" }}>Nextjs, CSS3, Redux</p>
                   </div>
                </div>
             </div>
@@ -224,10 +232,6 @@ const Home = () => {
                   </div>
                </div>
             </div>
-         </div>
-
-         <div className="footer">
-            <p>Designed & Built by Abdulazeez Onadipe</p>
          </div>
 
          <div className="contact">
